@@ -95,3 +95,15 @@ h1, h2, h3 {
     width: 95%;
     padding-top: 3rem;
 }
+
+/* Supercharge Section */
+.supercharge__list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 6rem;
+}
+
+.supercharge__icon {
+    padding-bottom: 2rem;
+}
