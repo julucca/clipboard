@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root {
+    --font: 'Bai Jamjuree', sans-serif;
+    /* Colors */
+    --strong-cyan: #26baa4;
+    --strong-cyan-hover: #1e9b8a;
+    --light-blue: #6173ff;
+    --light-blue-hover: #5364CA;
+    --dark-grayish-blue: #4c545d;
+    --grayish-blue: #9fabb2;
+}
+
+
+body {
+    background: url("./images/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--font);
+    font-size: 100%;
+    font-weight: 400;
+    color: var(--grayish-blue);
+}
+
+.main-content {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    text-align: center;
+    margin: 7.5rem 1rem 3.75rem;
+}
+
+.main-content__title {
+    color: var(--dark-grayish-blue);
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 4rem 0 2rem;
+}
+
+.main-content__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    color: white;
+    font-weight: 600;
+    padding-top: 2rem;
+}
+
+.main-content__buttons a {
+    padding: .75rem 5rem;
+    border-radius: 32px;
+}
+
+.buttons__primary {
+    background-color: var(--strong-cyan);
+    box-shadow: 0px 10px 20px rgb(0, 0, 0, 0.15), 0px 2px 0px 1px var(--strong-cyan-hover);
+}
+
+.buttons__secondary {
+    background-color: var(--light-blue);
+    box-shadow: 0px 10px 20px rgb(0, 0, 0, 0.15), 0px 2px 0px 1px var(--light-blue-hover);
+}
