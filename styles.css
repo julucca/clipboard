@@ -90,3 +90,8 @@ h1, h2, h3 {
     padding-bottom: 3rem;
 }
 
+/* Access Section */
+.access__image {
+    width: 95%;
+    padding-top: 3rem;
+}
