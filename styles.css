@@ -11,7 +11,7 @@
     --grayish-blue: #9fabb2;
 }
 
-
+/* General Styles */
 body {
     background: url("./images/bg-header-mobile.png");
     background-repeat: no-repeat;
@@ -20,19 +20,34 @@ body {
     font-size: 100%;
     font-weight: 400;
     color: var(--grayish-blue);
+    margin-block: 3.75rem;
 }
 
-.main-content {
+h1, h2, h3 {
+    color: var(--dark-grayish-blue);
+    font-weight: 600;
+}
+
+.default__title {
+    font-size: 1.55rem;
+    padding-bottom: 2rem;
+}
+
+.default__subtitle {
+    font-size: 1.35rem;
+    padding-bottom: .75rem;
+}
+
+.container {
     font-size: 1.125rem;
     line-height: 1.75rem;
     text-align: center;
-    margin: 7.5rem 1rem 3.75rem;
+    padding: 3.75rem 1rem;
 }
 
+/* Main Section */
 .main-content__title {
-    color: var(--dark-grayish-blue);
     font-size: 2rem;
-    font-weight: 600;
     padding: 4rem 0 2rem;
 }
 
@@ -60,3 +75,16 @@ body {
     background-color: var(--light-blue);
     box-shadow: 0px 10px 20px rgb(0, 0, 0, 0.15), 0px 2px 0px 1px var(--light-blue-hover);
 }
+
+/* Track Section */
+.track__section {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    text-align: center;
+}
+
+.track__list li:not(:last-child) {
+    padding-bottom: 3rem;
+}
+
