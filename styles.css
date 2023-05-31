@@ -107,3 +107,10 @@ h1, h2, h3 {
 .supercharge__icon {
     padding-bottom: 2rem;
 }
+
+/* Clients Section */
+.clients__list {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
