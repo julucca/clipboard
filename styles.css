@@ -4,9 +4,11 @@
     --font: 'Bai Jamjuree', sans-serif;
     /* Colors */
     --strong-cyan: #26baa4;
-    --strong-cyan-hover: #1e9b8a;
+    --strong-cyan-border: #1e9b8a;
+    --strong-cyan-hover: #5DCCBB;
     --light-blue: #6173ff;
-    --light-blue-hover: #5364CA;
+    --light-blue-border: #5364CA;
+    --light-blue-hover: #8896FF;
     --dark-grayish-blue: #4c545d;
     --grayish-blue: #9fabb2;
     --light-grayish-blue: #F5F6F8;
@@ -62,12 +64,20 @@ p {
 
 .button__primary {
     background-color: var(--strong-cyan);
-    box-shadow: 0px 10px 20px rgb(0, 0, 0, 0.15), 0px 2px 0px 1px var(--strong-cyan-hover);
+    box-shadow: 0px 10px 20px rgb(0, 0, 0, 0.15), 0px 2px 0px 1px var(--strong-cyan-border);
+}
+
+.button__primary:hover {
+    background-color: var(--strong-cyan-hover);
 }
 
 .button__secondary {
     background-color: var(--light-blue);
-    box-shadow: 0px 10px 20px rgb(0, 0, 0, 0.15), 0px 2px 0px 1px var(--light-blue-hover);
+    box-shadow: 0px 10px 20px rgb(0, 0, 0, 0.15), 0px 2px 0px 1px var(--light-blue-border);
+}
+
+.button__secondary:hover {
+    background-color: var(--light-blue-hover);
 }
 
 /* Main Section */
@@ -157,8 +167,21 @@ p {
     font-size: 1.15rem;
 }
 
+.footer__list li:hover {
+    color: var(--strong-cyan-hover)
+}
+
+.footer__icon i {
+    font-size: 1.5625rem;
+    color: var(--dark-grayish-blue);
+}
+
 .footer__icon:not(:last-of-type) {
     margin-right: 3rem;
+}
+
+.footer__icon i:hover {
+    color: var(--strong-cyan-hover);
 }
 
 @media (min-width: 680px) {
