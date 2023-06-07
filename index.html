@@ -12,7 +12,7 @@
 <body>
     <main>
         <!-- Main Section -->
-        <section class="container">
+        <section class="container main__section">
             <img src="./images/logo.svg" alt="O logo do Clipboard: a letra C com um círculo em volta. A cor do logo é verde água.">
             <h1 class="main__title">Um histórico de tudo que você copia</h1>
             <p>O Clipboard permite que você rastreie e organize tudo que você copia. Acesse instantaneamente em todos dispositivos.</p>
@@ -27,24 +27,27 @@
                 <h2 class="default__title">Acompanhe seus trechos copiados</h2>
                 <p>A área de transferência armazena instantaneamente qualquer item que você copia na nuvem, o que significa que você pode acessar suas cópias imediatamente em todos os seus dispositivos. Nossos aplicativos para Mac e iOS vão te ajudar a organizar tudo.</p>
             </div>
-            <img src="./images/image-computer.png" alt="Imagem de um Mac. O fundo de tela do monitor é o mar visto de cima em tom esverdeado. Sobre o fundo de tela temos a tela de abertura do Clipboard.">
-            <ul class="track__list">
-                <li>
-                    <h3 class="default__subtitle">Busca rápida</h3>
-                    <p>Pesquise facilmente seus trechos copiados por conteúdo, categoria, endereço da web, aplicativo e muito mais.</p>
-                </li>
-                <li>
-                    <h3 class="default__subtitle">Sincronização do iCloud</h3>
-                    <p>Salve instantaneamente e sincronize trechos copiados em todos os seus dispositivos.</p>
-                </li>
-                <li>
-                    <h3 class="default__subtitle">Histórico completo</h3>
-                    <p>Recupere trechos copiados de qualquer momento desde o primeiro instante em que você começou a usar o aplicativo.</p>
-                </li>
-            </ul>
+            <div class="track__section__content">
+                <img class="track__image" src="./images/image-computer.png" alt="Imagem de um Mac. O fundo de tela do monitor é o mar visto de cima em tom esverdeado. Sobre o fundo de tela temos a tela de abertura do Clipboard.">
+                <ul class="track__list">
+                    <li>
+                        <h3 class="default__subtitle">Busca rápida</h3>
+                        <p>Pesquise facilmente seus trechos copiados por conteúdo, categoria, endereço da web, aplicativo e muito mais.</p>
+                    </li>
+                    <li>
+                        <h3 class="default__subtitle">Sincronização do iCloud</h3>
+                        <p>Salve instantaneamente e sincronize trechos copiados em todos os seus dispositivos.</p>
+                    </li>
+                    <li>
+                        <h3 class="default__subtitle">Histórico completo</h3>
+                        <p>Recupere trechos copiados de qualquer momento desde o primeiro instante em que você começou a usar o aplicativo.</p>
+                    </li>
+                </ul>
+            </div>
+
         </section>
         <!-- Access Section -->
-        <section class="container" >
+        <section class="access__section" >
             <h2 class="default__title">Acesse o Clipboard em qualquer lugar</h2>
             <p>Onde estiver, em movimento ou no seu computador, você pode acessar o seus Clipboard com apenas alguns cliques.</p>
             <img class="access__image" src="./images/image-devices.png" alt="A tela de um celular e de um tablet com o Clipboard aberto.">
@@ -92,7 +95,7 @@
             </ul>
         </section>
         <!-- Download Section -->
-        <section class="container">
+        <section class="container download__section">
             <h2 class="default__title">Clipboard para iOS e Mac OS</h2>
             <p>Disponível gratuitamente na App Store. Faça o download para Mac ou iOS, sincronize com o iCloud e você estará pronto para começar a adicionar ao seu clipboard.</p>
             <div class="main__buttons">
@@ -103,18 +106,20 @@
     </main>
 
     <footer class="footer container">
-        <img class="footer__logo" src="./images/logo.svg" alt="O logo do Clipboard: a letra C com um círculo em volta. A cor do logo é verde água.">
-        <ul class="footer__list">
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Política de Privacidade</a></li>
-            <li><a href="#">Press Kit</a></li>
-            <li><a href="#">Guia de instalação</a></li>
-        </ul>
-        <div >
-            <a class="footer__icon" href="#"><img src="./images/icon-facebook.svg" alt="Logo do Facebook: letra f dentro de um quadrado"></a>
-            <a class="footer__icon" href="#"><img src="./images/icon-twitter.svg" alt="Logo do Twitter: perfil de um pássaro"></a>
-            <a class="footer__icon" href="#"><img src="./images/icon-instagram.svg" alt="Logo do Instagram: representação de uma câmera com formas geométricas"></a>
+        <div class="footer__container">
+            <img class="footer__logo" src="./images/logo.svg" alt="O logo do Clipboard: a letra C com um círculo em volta. A cor do logo é verde água.">
+            <ul class="footer__list">
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Press Kit</a></li>
+                <li><a href="#">Guia de instalação</a></li>
+            </ul>
+            <div >
+                <a class="footer__icon" href="#"><img src="./images/icon-facebook.svg" alt="Logo do Facebook: letra f dentro de um quadrado"></a>
+                <a class="footer__icon" href="#"><img src="./images/icon-twitter.svg" alt="Logo do Twitter: perfil de um pássaro"></a>
+                <a class="footer__icon" href="#"><img src="./images/icon-instagram.svg" alt="Logo do Instagram: representação de uma câmera com formas geométricas"></a>
+            </div>
         </div>
     </footer>
 </body>

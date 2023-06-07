@@ -32,9 +32,16 @@ body {
 }
 
 /* Typography Styles */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: var(--dark-grayish-blue);
     font-weight: 600;
+}
+
+p {
+    margin-inline: auto;
+    max-width: 44rem;
 }
 
 .default__title {
@@ -87,14 +94,29 @@ h1, h2, h3 {
     text-align: center;
 }
 
+.track__image {
+    width: 95%;
+    height: auto;
+    max-width: 38rem;
+    padding-bottom: 2.8rem;
+}
+
 .track__list li:not(:last-child) {
     padding-bottom: 3rem;
 }
 
 /* Access Section */
+.access__section {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    text-align: center;
+    padding: 3.75rem 1rem 2rem;
+}
+
 .access__image {
     width: 95%;
     padding-top: 3rem;
+    max-width: 38rem;
 }
 
 /* Supercharge Section */
@@ -107,6 +129,7 @@ h1, h2, h3 {
 
 .supercharge__icon {
     padding-bottom: 2rem;
+    height: 2.3rem;
 }
 
 /* Clients Section */
@@ -124,15 +147,158 @@ h1, h2, h3 {
 
 .footer__logo {
     width: 2.8rem;
-} 
+}
 
 .footer__list {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     padding-block: 2.5rem;
+    font-size: 1.15rem;
 }
 
 .footer__icon:not(:last-of-type) {
     margin-right: 3rem;
+}
+
+@media (min-width: 680px) {
+    /* General Styles */
+    body {
+        background: url("./images/bg-header-desktop.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}
+
+@media (min-width: 900px) {
+
+    /* General Styles */
+    .container {
+        font-size: 1.25rem;
+        line-height: 2rem;
+        padding: 4.8rem 0;
+    }
+
+    /* Typography Styles */
+    .default__title {
+        font-size: 2.55rem;
+        /* padding-bottom: 2rem; */
+    }
+
+    /* Buttons Styles */
+    .button {
+        padding: .75rem 2rem;
+    }
+
+    /* Main Section */
+    .main__title {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    .main__buttons {
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 3.5rem;
+    }
+
+    /* Track Section */
+    .track__section__content {
+        display: flex;
+        align-items: flex-start;
+        gap: 5vw;
+    }
+
+    .track__image {
+        transform: translateX(-2.25rem);
+        padding-bottom: 0;
+        width: 52.5vw;
+        max-width: 50rem;
+    }
+
+    .track__list {
+        text-align: left;
+        max-width: 21rem;
+        width: 35vw;
+    }
+
+    /* Access Section */
+    .access__section {
+        font-size: 1.25rem;
+        line-height: 2rem;
+        padding: 4.8rem 0 2.8rem;
+    }
+
+    .access__image {
+        max-width: 56rem;
+    }
+
+    /* Supercharge Section */
+    .supercharge__list {
+        flex-direction: row;
+        max-width: 75vw;
+        margin-inline: auto;
+    }
+
+    /* Clients Section */
+    .clients__list {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 6rem;
+        margin-inline: 4rem;
+    }
+
+    /* Download Section */
+    .download__section {
+        margin-bottom: 5rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 2.75rem 2rem;
+    }
+
+    .footer__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 70rem;
+        margin-inline: auto;
+    }
+
+    .footer__logo {
+        width: 59px;
+    }
+
+    .footer__list {
+        flex-wrap: wrap;
+        row-gap: .625rem;
+        column-gap: 3.125rem;
+        text-align: left;
+        padding-block: 0;
+        height: 5.25rem;
+        width: 55%;
+    }
+
+    .footer__icon:not(:last-of-type) {
+        margin-right: 1rem;
+    }
+}
+
+@media (min-width: 1500px) {
+
+    /* Track Section */
+    .track__section__content {
+        justify-content: center;
+    }
+
+    .track__image {
+        transform: translateX(0);
+    }
+
+    /* Supercharge Section */
+    .supercharge__list {
+        max-width: 70rem;
+    }
 }
